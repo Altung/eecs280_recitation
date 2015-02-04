@@ -4,11 +4,11 @@ using namespace std;
 
 int main(int argc, char **argv) {
 
-  /*
-      Single-dimensional arrays
-  */
+  //
+  //  Single-dimensional arrays
+  //
 
-  int weather_forecast[10];
+  double weather_forecast[10];
 
   // Make predictions
   double degrees_fahrenheit = 29;
@@ -25,9 +25,9 @@ int main(int argc, char **argv) {
     cout << " °F" << endl;
   }
 
-  /*
-      Multi-dimensional arrays
-  */
+  //
+  //  Multi-dimensional arrays
+  //
 
   char checkerboard[8][8];
   const char EMPTY = '.';

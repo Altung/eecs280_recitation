@@ -4,22 +4,22 @@ using namespace std;
 
 int main(int argc, char **argv) {
 
-  /*
-      Single-dimensional arrays
-  */
+  //
+  //  Single-dimensional arrays
+  //
 
-  int weather_forecast[10];
+  double weather_forecast[10];
 
   // Make predictions
   double degrees_fahrenheit = 29;
-  for(int *ptr = weather_forecast; ptr != weather_forecast + 10; ptr++) {
+  for(double *ptr = weather_forecast; ptr != weather_forecast + 10; ptr++) {
     *ptr = degrees_fahrenheit;
     degrees_fahrenheit *= 0.8;
   }
 
   // Output results
   cout << "Upcoming temperatures for Ann Arbor, MI:" << endl;
-  for(int *ptr = weather_forecast; ptr != weather_forecast + 10; ptr++) {
+  for(double *ptr = weather_forecast; ptr != weather_forecast + 10; ptr++) {
     cout << "Feb " << (ptr - weather_forecast + 4) << ": ";
     cout << *ptr;
     cout << " °F" << endl;
