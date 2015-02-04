@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
   cout << endl;
 
   // Declare a pointer and use it to change degrees_fahrenheit
-  double *ptr = nullptr;
+  double *ptr = NULL;
   ptr = &degrees_fahrenheit;
   *ptr = 20;
 
